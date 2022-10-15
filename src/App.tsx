@@ -44,6 +44,15 @@ export function App() {
 
           <Button className='mt-4' type="submit" size='sm'>Entrar na plataforma</Button>
         </form>
+
+        <footer className="flex flex-col items-center gap-4 mt-8">
+          <Text asChild size='sm'>
+            <a href="" className='text-gray-400 hover:underline hover:text-gray-200'>Esqueceu sua senha ?</a>
+          </Text>
+          <Text asChild size='sm'>
+            <a href="" className='text-gray-400 hover:underline hover:text-gray-200'>Não possui conta? Crie uma agora!</a>
+          </Text>
+        </footer>
       </div>
     </>
   )
