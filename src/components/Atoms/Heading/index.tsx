@@ -4,7 +4,7 @@ import { HeadingProps } from "../../../interfaces/heading";
 
 
 
-const Heading: React.FC<HeadingProps> = ({ size = 'md', children, asChild }: HeadingProps) => {
+const Heading: React.FC<HeadingProps> = ({ size = 'md', children, asChild, className }: HeadingProps) => {
     const Comp = asChild ? Slot : 'h2';
     return (
         <Comp
@@ -13,7 +13,7 @@ const Heading: React.FC<HeadingProps> = ({ size = 'md', children, asChild }: Hea
                     'text-lg': size === 'sm',
                     'text-xl': size === 'md',
                     'text-2xl': size === 'lg'
-                })}>
+                }, className)}>
             {children}
         </Comp>)
 }

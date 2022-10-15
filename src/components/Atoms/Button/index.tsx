@@ -3,12 +3,12 @@ import { Slot } from "@radix-ui/react-slot"
 import { ButtonProps } from "../../../interfaces/button";
 
 
-const Button: React.FC<ButtonProps> = ({ size = 'md', children, asChild }: ButtonProps) => {
+const Button: React.FC<ButtonProps> = ({ size = 'md', children, asChild, className, ...props }: ButtonProps) => {
     const Comp = asChild ? Slot : 'button';
     return (
         <Comp
             className={
-                clsx(`py-4 px-3 
+                clsx(`py-3 px-4 
             bg-cyan-500 
             rounded 
             font-semibold 
@@ -21,8 +21,8 @@ const Button: React.FC<ButtonProps> = ({ size = 'md', children, asChild }: Butto
                         'text-xs': size === 'sm',
                         'text-sm': size === 'md',
                         'text-md': size === 'lg'
-                    }
-                )}>
+                    }, className
+                )} {...props}>
             {children}
         </Comp>
     )

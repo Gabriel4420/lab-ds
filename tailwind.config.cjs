@@ -17,7 +17,7 @@ module.exports = {
       'cyan-300': '#B1EEFF',
       wrong: '#FB6161',
       'grad-1': 'rgba(18, 18, 20, 0.92)',
-      'gray-2': '#121214',
+      'grad-2': '#121214',
     },
     extend: {
       fontFamily: {
