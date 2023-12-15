@@ -16,7 +16,7 @@
     "@radix-ui/react-slot": "^1.0.0",
     "@storybook/addon-a11y": "^6.5.12",
     "@storybook/jest": "^0.0.10",
-    "axios": "^1.1.3",
+    "axios": "^1.6.0",
     "clsx": "^1.2.1",
     "msw": "^0.47.4",
     "msw-storybook-addon": "^1.6.3",
